@@ -27,7 +27,7 @@ input,button,textarea{font-family:inherit;}
 
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
+button::-moz-focus-inner {padding:0}
 a, a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
@@ -321,6 +321,29 @@ h3 {
     margin-top: 163px;
 }
 .contact_form {}
+.form__block {
+  
+}
+.connection3 {
+    width: 400px;
+}
+button {
+    width: 60px;
+    border: 1px solid #000;
+}
+.social {
+    
+}
+
+.contacts__social {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 50px;
+}
+/* FOOTER */
 .foot {
     height: 273px;
     background: #3c3c3c;
