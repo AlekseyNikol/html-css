@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
+.btn {
+  display: inline-block;
+  padding: 0px 0px;
+  height: 47px;
+  padding: 0px 44px;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.6px;
+  position: relative;
+}
+.btn:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.btn_w {
+  border: 1px solid #fff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+.btn:hover {
+  color: #000;
+  transition: all 0.5s linear 0s;
+}
+.btn:hover:after {
+  background-color: #fff;
+  transition: all 0.7s linear 0s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  list-style: none;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+aside, nav, footer, header, section {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  position: relative;
+  width: 100%;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1;
+  font-family: "Lato";
+}
+body.lock {
+  overflow: hidden;
+}
+@media (max-width: 767.98px) {
+  body.lock {
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  font-size: 0;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainblock {
+  flex: 1 1 auto;
+  position: relative;
+  display: flex;
+  font-size: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 0;
+}
+@madia screen and (max-width: $md3+px),
+        screen and (max-height: 600px) {
+  .mainblock {
+    padding: 20px 0;
+  }
+}
+.mainblock__content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+.mainblock__text {
+  color: #fff;
+  position: relative;
+  padding: 0px 0px 45px 0px;
+  margin: 160px 0px 200px 0px;
+}
+.mainblock__text:after {
+  content: "";
+  width: 105px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  margin: 0px 0px 0px -45px;
+  bottom: 0;
+}
+.mainblock__title {
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 5.43px;
+  padding: 0px 0px 10px 0px;
+}
+@madia screen and (max-width: $md3+px) , screen and (max-height: 600px) {
+  .mainblock__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+.mainblock__subtitle {
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 4.15px;
+  text-align: center;
+}
+.mainblock__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
