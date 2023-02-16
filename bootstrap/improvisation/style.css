@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rowdies&family=Rubik+Spray+Paint&display=swap');
+
+header{
+    background-color: #a5a5a5;
+}
+h1,h3 {
+    font-family: 'Lobster', cursive;
+}
 section {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+.content {
+    background-color: #a5a5a5;
 }
 .carousel-control-next-icon {
     background-image: url(img/free-icon-right-arrow-271228.png);
@@ -14,3 +25,6 @@ section {
 .carousel-control-next {
     right: -115px;
 }
+
+/* https://i.pinimg.com/736x/fb/3b/28/fb3b28794a6f393289288cb5c21f99f0.jpg
+https://www.pan-yteplyai.com/img/images_2/veterinarnij-osmotr-o-chem-stoit-znat-zaranee_3.jpg */
