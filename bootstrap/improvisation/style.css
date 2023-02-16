@@ -3,5 +3,14 @@ section {
     padding-bottom: 50px;
 }
 .carousel-control-next-icon {
-    
+    background-image: url(img/free-icon-right-arrow-271228.png);
+}
+.carousel-control-prev-icon {
+    background-image: url(img/free-icon-arrowhead-thin-outline-to-the-left-32542.png);
+}
+.carousel-control-prev {
+    left: -115px;
+}
+.carousel-control-next {
+    right: -115px;
 }
