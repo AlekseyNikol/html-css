@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rowdies&family=Rubik+Spray+Paint&display=swap');
 
+:root {
+    --col1: #a5a5a5
+}
+
 header{
-    background-color: #a5a5a5;
+    background-color: var(--col1)
 }
 h1,h3 {
     font-family: 'Lobster', cursive;
@@ -11,7 +15,7 @@ section {
     padding-bottom: 50px;
 }
 .content {
-    background-color: #a5a5a5;
+    background-color: var(--col1);
 }
 .carousel-control-next-icon {
     background-image: url(img/free-icon-right-arrow-271228.png);
@@ -20,10 +24,65 @@ section {
     background-image: url(img/free-icon-arrowhead-thin-outline-to-the-left-32542.png);
 }
 .carousel-control-prev {
-    left: -115px;
+    left: -120px;
 }
 .carousel-control-next {
-    right: -115px;
+    right: -100px;
+}
+
+footer {
+    background-color: #e9ecef;
+}
+.text-bg-success {
+    height: 280px;
+}
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    transform: rotateY(0deg);
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    transform: rotateY(180deg);
+}
+
+.image-flip {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 250px;
+}
+
+.mainflip {
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside,
+.backside {
+    backface-visibility: hidden;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.frontside {
+    z-index: 2;
+}
+
+.backside {
+    transform: rotateY(-180deg);
+}
+
+.card,
+.card-img-top {
+    border-radius: 0;
+}
+
+p{
+    text-align: center;
 }
 
 /* https://i.pinimg.com/736x/fb/3b/28/fb3b28794a6f393289288cb5c21f99f0.jpg
