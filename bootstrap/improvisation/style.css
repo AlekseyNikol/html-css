@@ -52,6 +52,10 @@ footer {
     height: 250px;
 }
 
+.card-img-top {
+    height: 190px;
+}
+
 .mainflip {
     transition: 1s;
     transform-style: preserve-3d;
