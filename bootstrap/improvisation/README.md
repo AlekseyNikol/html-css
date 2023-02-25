@@ -23,7 +23,7 @@ In the work used:
 ![screen](screen2.jpg)
 
 ### Animation cards
-Animation maps (180* vertical rotation) implemented in pure css using the [hover] pseudo-class(https://developer.mozilla.org/en/docs/Web/CSS/:hover) property the [transitions] properties(https://developer.mozilla.org/en-US/docs/ Web/CSS/transition) and [transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform).
+Animation maps (180* vertical rotation) implemented in pure css using the pseudo-class [hover](https://developer.mozilla.org/en/docs/Web/CSS/:hover) property the [transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) and [transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform).
 
 ![map animation](screen3.jpg)
 ~~~
