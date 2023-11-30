@@ -29,3 +29,26 @@ const swiper = new Swiper('.swiper', {
       },
    },
  });
+
+ // Dynamic counter
+
+ const counterUp = window.counterUp.default
+
+const callback = entries => {
+    entries.forEach( entry => {
+        const el = entry.target
+        if ( entry.isIntersecting && ! el.classList.contains( 'is-visible' ) ) {
+            counterUp( el, {
+                duration: 1000,
+                //delay: 16,
+            } )
+            el.classList.add( 'is-visible' )
+        }
+    } )
+}
+
+const IO = new IntersectionObserver( callback, { threshold: 0 } )
+
+const el = document.querySelectorAll( '.about_page' );
+
+el.forEach(elem => {IO.observe( elem )})
