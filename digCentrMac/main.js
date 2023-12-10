@@ -1,11 +1,26 @@
 //catalog-block button
 
 let but = document.querySelectorAll('.column-categories')
+let but2 = document.querySelectorAll('.column-categories-s')
 console.log(but)
 
 but.forEach(el => el.addEventListener('click', () => window.location.reload()))
+but2.forEach(el => el.addEventListener('click', () => window.location.reload()))
+
+//Menu
+
+let menuCatalog = document.querySelectorAll('.catalog-column')
+let menuColumn = document.querySelectorAll('.column-categories-s')
+let menuColumnE = document.querySelector('.column-categories-e')
 
 
+menuColumnE.addEventListener('click', addColumn )
+
+function addColumn() {
+  menuColumn.forEach(el => el.style.display = "flex");
+  menuColumnE.style.display="none"
+  
+}
 
 //Slider
 const swiper = new Swiper('.swiper', {
